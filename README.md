@@ -1,3 +1,10 @@
+# Status Build
+
+## Travis
+[![Build Status](https://travis-ci.org/thiagonf/GCS01.svg?branch=master)](https://travis-ci.org/thiagonf/GCS01)
+## CircleCI
+[![CircleCI](https://circleci.com/gh/thiagonf/GCS01/tree/master.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/thiagonf/GCS01/tree/master)
+
 # Django Basico
 
 ## Ambiente de Dev
