@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from decouple import config
 from dj_database_url import parse as dburl
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -76,12 +77,11 @@ WSGI_APPLICATION = 'djangobasico.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
     
+     
+
 default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 
-DATABASES = { 
-    'default': config('DATABASE_URL', default=default_dburl, cast=dburl), 
-    }
-
+DATABASES = { 'default': config('DATABASE_URL', default=default_dburl, cast=dburl), }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
